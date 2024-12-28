@@ -2,10 +2,9 @@ version: "3"
 
 services:
   faka:
-    platform: linux/amd64
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: ./docker/Dockerfile
     container_name: faka
     volumes:
       - ./test/uploads:/dujiaoka/public/uploads
